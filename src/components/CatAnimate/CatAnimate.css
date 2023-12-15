@@ -1,0 +1,33 @@
+.cat-animate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+.cat-animate > * {
+  margin: 10px; /* Espaciado uniforme alrededor de los elementos */
+}
+
+.nes-octocat,
+.nes-bcrikko,
+.nes-balloon {
+  margin-bottom: 20px; 
+}
+
+@media (min-width: 600px) {
+  .cat-animate {
+    flex-direction: row;
+  }
+
+  .cat-animate > * {
+    margin: 0 10px; /* Ajuste el espaciado entre elementos en la fila */
+  }
+
+  .nes-octocat,
+  .nes-bcrikko,
+  .nes-balloon {
+    margin-bottom: 0;
+  }
+}

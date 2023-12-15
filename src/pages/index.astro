@@ -1,19 +1,20 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import CatAnimate from "../components/CatAnimate/CatAnimate.astro";
+
 const pageTitle = "Inicio";
 ---
 
-<BaseLayout pageTitle={pageTitle}>}
-  <!-- octocat -->
-  <i class="nes-octocat animate"></i>
+<BaseLayout pageTitle={pageTitle}>
+
+  <CatAnimate />
   <div class="nes-container is-dark with-title">
-    
     <p class="title">Bienvenidos al blog retro de Programación en español</p>
     <div class="lists">
       <ul class="nes-list is-circle">
         <p>
           Este es un blog retro desarrollado con <i
-            class="nes-icon is-small heart"></i>, Astro y NES.css.
+            class="nes-icon is-small heart"></i>, <a target="_blank" href="https://astro.build/">Astro</a> y <a target="_blank" href="https://nostalgic-css.github.io/NES.css/">NES.css</a>.
         </p>
         <p>
           ¡La idea es que el blog sirva como tutorial para crearlo desde cero
@@ -33,6 +34,4 @@ const pageTitle = "Inicio";
       </ul>
     </div>
   </div>
-  <!-- octocat -->
-  <i class="nes-octocat animate"></i>
 </BaseLayout>

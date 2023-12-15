@@ -18,6 +18,7 @@
       "footer" auto;
     gap: 10px;
     color: #ff6d00;
+
   }
   
   header {
@@ -30,6 +31,7 @@
   
   footer {
     grid-area: "footer";
+
   }
   
   .post-list {
@@ -50,15 +52,24 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     gap: 10px;
+
   }
-  
-  .nes-badge span.is-warning:first-child {
-    position: relative;
-    padding: 5px;
-  }
-  
-  .nes-badge,
-  .nes-badge:hover {
-    width: auto;
-    text-decoration: none;
-  }
+
+.nes-badge,
+.nes-badge:hover {
+  width: auto;
+  text-decoration: none;
+  background-color: #fafafa;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nes-badge span.is-warning:first-child {
+  position: relative;
+  padding: 5px;
+  color: #000;
+}
+
+.nes-badge:hover span.is-warning {
+  color: #000;
+}
+
