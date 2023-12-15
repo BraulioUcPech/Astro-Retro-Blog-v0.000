@@ -9,18 +9,66 @@ npm create astro@latest -- --template minimal
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
 
 > 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+![Ejemplo de imagen](./public/img/captura-1.png)
 
 ## 🚀 Project Structure
 
 Inside of your Astro project, you'll see the following folders and files:
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+
+
+```
+└── 📁Astro-Retro
+    └── .prettierrc.mjs
+    └── 📁.vscode
+        └── extensions.json
+        └── launch.json
+    └── astro.config.mjs
+    └── package.json
+    └── pnpm-lock.yaml
+    └── 📁public
+        └── favicon.svg
+        └── 📁fonts
+            └── OFL.txt
+            └── PressStart2P-Regular.ttf
+        └── 📁img
+            └── captura-1.png
+            └── post-image.jpg
+        └── 📁styles
+            └── global.css
+    └── README.md
+    └── 📁src
+        └── 📁components
+            └── 📁Footer
+                └── Footer.astro
+                └── Footer.css
+            └── 📁Hamburger
+                └── Hamburger.astro
+                └── Hamburger.css
+            └── 📁Navigation
+                └── Navigation.astro
+                └── Navigation.css
+            └── 📁PostCard
+                └── PostCard.astro
+                └── PostCard.css
+            └── 📁PostImage
+                └── PostImage.astro
+                └── PostImage.css
+            └── 📁Tag
+                └── Tag.astro
+                └── Tag.css
+        └── env.d.ts
+        └── 📁pages
+            └── blog.astro
+            └── index.astro
+            └── 📁post
+                └── hola-mundo.md
+            └── 📁tags
+                └── index.astro
+                └── [tag].astro
+        └── 📁scripts
+            └── menu.ts
+    └── tsconfig.json
 ```
 
 Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
